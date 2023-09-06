@@ -1,5 +1,7 @@
 # this is a comment
 drop *
-keep Muon*
-keep Electron*
-keep Jet*
+keep L1EG*
+keep L1Mu*
+keep L1Jet*
+keep L1EtSum*
+

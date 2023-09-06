@@ -5,11 +5,11 @@ from PhysicsTools.NanoAODTools.postprocessing.framework.postprocessor import *
 # this takes care of converting the input files from CRAB
 from PhysicsTools.NanoAODTools.postprocessing.framework.crabhelper import inputFiles, runsAndLumis
 
-from PhysicsTools.NanoAODTools.postprocessing.examples.exampleModule import *
+from PhysicsTools.NanoAODTools.postprocessing.modules.l1ad_inference import *
 p = PostProcessor(".",
                   inputFiles(),
-                  "Jet_pt>200",
-                  modules=[exampleModuleConstr()],
+                  "",
+                  modules=[axol1tlModuleConstr()],
                   provenance=True,
                   fwkJobReport=True,
                   jsonInput=runsAndLumis())
